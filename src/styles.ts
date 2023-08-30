@@ -1,10 +1,15 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const cores = {
-  branca: '#fff',
-  rosaClaro: '#FFF8F2',
-  rosaEscuro: '#E66767',
-  corTexto: '#FFEBD9'
+export const colors = {
+  darkPink: '#e66767',
+  lightPink: '#ffebd9',
+  backgroundPink: '#fff8f2',
+  white: '#fff'
+}
+
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -12,12 +17,22 @@ export const GlobalCss = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    align-itens: center;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
   }
 
   body {
-    background-color: ${cores.rosaClaro};
-    color: ${cores.rosaEscuro}
+    background-color: ${colors.backgroundPink};
+    color: ${colors.darkPink};
+  }
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      max-width: 80%;
+    }
   }
 `

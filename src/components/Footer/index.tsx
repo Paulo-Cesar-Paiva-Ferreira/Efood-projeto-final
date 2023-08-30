@@ -1,29 +1,42 @@
-import { Container, Descricao, Logo } from './styles'
+import { Container, ListContainer, LinkLogo } from './styles'
 
-import logo from '../../assets/images/logo.svg'
-import insta from '../../assets/images/insta_icon.png'
-import face from '../../assets/images/face_icon.png'
-import twitter from '../../assets/images/twitter_icon.png'
+import Logo from '../../assets/images/logo.png'
+
+import Instagram from '../../assets/images/icons/instagram.png'
+import Facebook from '../../assets/images/icons/facebook.png'
+import Twitter from '../../assets/images/icons/twitter.png'
 
 const Footer = () => {
   return (
-    <>
-      <Container>
-        <div>
-          <Logo src={logo} alt="EFOOD" />
-          <div>
-            <img src={insta} alt="Instagram" />
-            <img src={face} alt="Facebok" />
-            <img src={twitter} alt="Twitter" />
-          </div>
-        </div>
-        <Descricao>
+    <Container>
+      <div className="container">
+        <LinkLogo to={'/'}>
+          <img src={Logo} alt="Logo" />
+        </LinkLogo>
+        <ListContainer>
+          <li>
+            <a href="">
+              <img src={Instagram} alt="icone instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src={Facebook} alt="icone Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src={Twitter} alt="icone Twitter" />
+            </a>
+          </li>
+        </ListContainer>
+        <p>
           A efood é uma plataforma para divulgação de estabelecimentos, a
-          responsabilidade pela entrega, qualidade <br /> dos produtos é toda do
+          responsabilidade pela entrega, qualidade dos produtos é toda do
           estabelecimento contratado.
-        </Descricao>
-      </Container>
-    </>
+        </p>
+      </div>
+    </Container>
   )
 }
 

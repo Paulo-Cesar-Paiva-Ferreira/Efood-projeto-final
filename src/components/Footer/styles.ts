@@ -1,34 +1,32 @@
-import { styled } from 'styled-components'
-import { cores } from '../../styles'
+import { Link } from 'react-router-dom'
+
+import styled from 'styled-components'
+import { colors } from '../../styles'
 
 export const Container = styled.div`
-width: 100%
-heigth: 298px;
-background-color: ${cores.corTexto};
-color: ${cores.rosaEscuro};
-display: block;
-justify-content: center;
-
-  div {
-    text-align: center;
-    padding-top: 32px;
-  }
-
-  img {
-    margin-right: 8px;
-  }
-`
-
-export const Logo = styled.img`
-  margin-top: 40px;
-  align-items: center;
-`
-
-export const Descricao = styled.p`
-  padding-top: 80px;
-  padding-bottom: 40px;
+  background-color: ${colors.lightPink};
+  padding: 40px;
   text-align: center;
-  weight: 400;
-  font-size: 10px;
-  line-height: 11.72px;
+  margin-top: 120px;
+
+  p {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+`
+export const ListContainer = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 80px;
+
+  a {
+    text-decoration: none;
+  }
+`
+
+export const LinkLogo = styled(Link)`
+  text-decoration: none;
 `

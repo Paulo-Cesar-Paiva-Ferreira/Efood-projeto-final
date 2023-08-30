@@ -1,54 +1,47 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
 
-import { Props } from '.'
-import { BtnLinkSecundario } from '../Button/styles'
-import { Container } from '../ProductList/styles'
+import { breakpoints, colors } from '../../styles'
 
-export const BgHero = styled.header<Props>`
-  width: 100%;
-  height: 186px;
-  align-items: center;
-
-  ${Container} {
-    padding-top: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  ${BtnLinkSecundario} {
-    font-size: 18px;
-    font-weight: 900;
-    background-color: transparent;
-    display: flex;
-    width: auto;
-  }
-`
-
-// verificar alinhamento da img
-export const Logo = styled.img`
-  display: flex;
-  align-items: center;
-`
-
-// verificar - não ficou exato a posição
-export const BgBanner = styled.div`
-  height: 280px;
+export const BannerContainer = styled.div`
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-`
-export const BgOpacity = styled.div`
+  display: block;
+  margin-bottom: 56px;
   width: 100%;
   height: 280px;
-  background: rgba(0, 0, 0, 0.5);
-`
+  position: relative;
 
-export const Infos = styled.h2<Props>`
-  color: ${cores.branca};
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
+  }
+`
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 160px;
+  padding: 24px 0;
+  color: ${colors.white};
   font-size: 32px;
-  font-weight: ${(props) => (props.weight === 'big' ? '700' : '100')};
-  line-height: 37.5px;
-  padding-top: 25px;
-  padding-bottom: 124px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 24px;
+  }
+
+  span {
+    font-weight: 100;
+    z-index: 1;
+  }
+
+  h3 {
+    font-weight: 900;
+    z-index: 1;
+  }
 `
