@@ -27,12 +27,17 @@ export const Content = styled.div`
 export const LinkLogo = styled(Link)`
   text-decoration: none;
   margin: 0 auto;
+  justify-content: center;
+`
+export const LinkHome = styled(Link)`
+  text-decoration: none;
 `
 
 export const Title = styled.h2`
   font-size: 18px;
+  font-weight: 900;
   color: ${colors.darkPink};
-  margin-right: 80px;
+  margin-right: 124px;
 
   @media (max-width: ${breakpoints.tablet}) {
     margin: 0 auto;
@@ -40,4 +45,6 @@ export const Title = styled.h2`
 `
 export const CartButton = styled.a`
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
 `

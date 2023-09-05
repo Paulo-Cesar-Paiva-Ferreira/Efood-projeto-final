@@ -8,7 +8,7 @@ const HeaderComponent = () => {
       <div className="container">
         <img src={logo} alt="logo efood" />
         <TextHeader>
-          Viva experiências gastronômicas no conforto da sua casa
+          Viva experiências gastronômicas <br /> no conforto da sua casa
         </TextHeader>
       </div>
     </ContainerHeader>

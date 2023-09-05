@@ -10,10 +10,9 @@ export const ContainerHeader = styled.div`
   margin-bottom: 80px;
 `
 export const TextHeader = styled.h2`
-  font-weight: 900;
   font-size: 36px;
+  font-weight: 900;
   line-height: 42px;
-  width: 540px;
   margin: 136px auto 0;
 
   @media (max-width: ${breakpoints.tablet}) {

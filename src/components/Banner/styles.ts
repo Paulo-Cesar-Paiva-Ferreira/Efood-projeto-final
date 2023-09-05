@@ -38,10 +38,16 @@ export const Content = styled.div`
   span {
     font-weight: 100;
     z-index: 1;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 37.5px;
   }
 
   h3 {
     font-weight: 900;
+    font-size: 32px;
+
+    line-height: 37.5px;
     z-index: 1;
   }
 `

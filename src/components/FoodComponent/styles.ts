@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export const FoodContainer = styled.div`
   border: 1px solid ${colors.darkPink};
   border-top: none;
-  background-color: transparent;
+  background-color: ${colors.white};
   position: relative;
   max-width: 480px;
   width: 100%;
@@ -32,6 +32,7 @@ export const InfoContainer = styled.div`
   p {
     line-height: 22px;
     margin-bottom: 32px;
+    font-size: 14px;
   }
 `
 export const TitleContent = styled.div`
@@ -39,8 +40,14 @@ export const TitleContent = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+
+
+
+  h3 {
+  font-size: 18px
   font-weight: bold;
-  font-size: 18px;
+
+  }
 `
 
 export const RatingContainer = styled.div`
@@ -51,10 +58,10 @@ export const RatingContainer = styled.div`
 export const ButtonLink = styled(Link)`
   background-color: ${colors.darkPink};
   color: ${colors.lightPink};
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 14px;
   cursor: pointer;
   padding: 4px 6px;
-
   position: absolute;
   bottom: 8px;
   left: 8px;

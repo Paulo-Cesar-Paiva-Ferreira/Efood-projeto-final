@@ -1,6 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux'
 
-import { Container, Content, LinkLogo, Title, CartButton } from './styles'
+import {
+  Container,
+  Content,
+  LinkLogo,
+  Title,
+  CartButton,
+  LinkHome
+} from './styles'
 
 import Logo from '../../assets/images/logo.png'
 import { RootReducer } from '../../store'
@@ -18,7 +25,9 @@ const HeaderPageProduct = () => {
   return (
     <Container>
       <Content className="container">
-        <Title>Restaurantes</Title>
+        <LinkHome to={'/'}>
+          <Title>Restaurantes</Title>
+        </LinkHome>
         <LinkLogo to={'/'}>
           <img src={Logo} alt="Logo" />
         </LinkLogo>

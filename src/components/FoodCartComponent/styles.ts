@@ -40,9 +40,8 @@ export const FoodContainer = styled.ul`
     width: 320px;
 
     > img {
+      height: 168px;
       width: 100%;
-      height: 160px;
-      max-height: 100%;
       padding: 8px;
     }
   }
@@ -54,6 +53,8 @@ export const InfoContainer = styled.div`
   p {
     line-height: 22px;
     margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
   }
 
   ${ButtonCart} {
@@ -61,6 +62,8 @@ export const InfoContainer = styled.div`
     width: 100%;
     text-align: center;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
   }
 `
 export const TitleContent = styled.div`
@@ -68,8 +71,11 @@ export const TitleContent = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 18px;
+
+  h3 {
+    font-weight: 900;
+    font-size: 16px;
+  }
 `
 
 //Modal Style
@@ -121,8 +127,8 @@ export const ModalContainer = styled.div`
 
   > div {
     img {
-      width: 240px;
-      height: 240px;
+      width: 280px;
+      height: 280px;
     }
   }
 `
@@ -141,6 +147,8 @@ export const Content = styled.div`
   p,
   span {
     font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
 
     @media (max-width: ${breakpoints.tablet}) {
       text-align: center;
@@ -153,6 +161,11 @@ export const Content = styled.div`
   }
 
   ${ButtonCart} {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 4px 7px;
+
     position: relative;
     margin: 0 auto;
 
