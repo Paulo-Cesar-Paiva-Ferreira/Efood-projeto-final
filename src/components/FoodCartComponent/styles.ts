@@ -12,8 +12,7 @@ export const ButtonCart = styled.button`
   position: absolute;
   bottom: 0;
   left: 0px;
-  max-width: 90%;
-  margin: 16px;
+  max-width: 95%;
 `
 
 //FoodComponent Style
@@ -38,18 +37,17 @@ export const FoodContainer = styled.ul`
     color: ${colors.lightPink};
     position: relative;
     width: 320px;
+    padding: 8px;
 
     > img {
-      height: 168px;
-      width: 100%;
-      padding: 8px;
+      height: 167px;
+      width: 304px;
     }
   }
 `
 
 export const InfoContainer = styled.div`
-  padding: 8px;
-
+  width: 100%;
   p {
     line-height: 22px;
     margin-bottom: 40px;
@@ -58,8 +56,9 @@ export const InfoContainer = styled.div`
   }
 
   ${ButtonCart} {
-    display: inline-block;
+    margin: 8px;
     width: 100%;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
