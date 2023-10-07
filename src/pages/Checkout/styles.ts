@@ -61,7 +61,7 @@ export const CartItem = styled.li`
   display: flex;
   background-color: ${colors.lightPink};
   position: relative;
-  padding: 8px 8px 12px 8px;
+  padding: 8px;
   margin-bottom: 16px;
 
   img {
@@ -87,17 +87,16 @@ export const CartItem = styled.li`
     font-weight: 900;
     font-size: 18px;
     margin-bottom: 16px;
-    line-height: 21px;
   }
 
   span {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
   }
 `
 
 export const TextOrder = styled.p`
+  margin-bottom: 12px;
+
   span {
     display: block;
     padding: 12px 0;
@@ -114,8 +113,6 @@ export const PriceContainer = styled.div`
   color: ${colors.lightPink};
   font-weight: bold;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
 `
 
 export const FormContainer = styled.div`
@@ -138,6 +135,10 @@ export const FormContainer = styled.div`
   }
 
   input {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
     height: 32px;
     margin: 8px 0;
     border: 1px solid ${colors.darkPink};
@@ -184,8 +185,7 @@ export const ButtonContainer = styled.div`
 export const Button = styled.button<PropsMargin>`
   padding: 4px;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
+  font-weight: bold;
   color: ${colors.darkPink};
   background-color: ${colors.lightPink};
   border: none;
