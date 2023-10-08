@@ -474,8 +474,8 @@ const Checkout = () => {
         .min(3, 'O campo precisa ter pelo menos 3 caracteres')
         .required('O campo é obrigatório'),
       cep: Yup.string()
-        .min(14, 'O campo precisa ter 14 caracteres')
-        .max(14, 'O campo precisa ter 14 caracteres')
+        .min(9, 'O campo precisa ter 8 caracteres')
+        .max(9, 'O campo precisa ter 8 caracteres')
         .required('O campo é obrigatório'),
       numberAddress: Yup.string().required('O campo é obrigatório'),
       cardName: Yup.string().required('O campo é obrigatório'),
@@ -636,7 +636,7 @@ const Checkout = () => {
                     <div>
                       <label htmlFor="cep">CEP</label>
                       <InputMask
-                        mask="99999.999"
+                        mask="99999-999"
                         type="text"
                         id="cep"
                         name="cep"
